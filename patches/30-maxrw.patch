@@ -1,0 +1,16 @@
+diff --git a/sshfs.c b/sshfs.c
+index d0d0b3a..28c9812 100644
+--- a/sshfs.c
++++ b/sshfs.c
+@@ -4423,11 +4423,6 @@ int main(int argc, char *argv[])
+ 
+ 	sshfs.randseed = time(0);
+ 
+-	if (sshfs.max_read > 65536)
+-		sshfs.max_read = 65536;
+-	if (sshfs.max_write > 65536)
+-		sshfs.max_write = 65536;
+-
+ 	fsname = fsname_escape_commas(fsname);
+ 	tmp = g_strdup_printf("-osubtype=sshfs,fsname=%s", fsname);
+ 	fuse_opt_insert_arg(&args, 1, tmp);
