@@ -1,0 +1,13 @@
+diff --git a/sshfs.c b/sshfs.c
+index 28c9812..3b0f02b 100644
+--- a/sshfs.c
++++ b/sshfs.c
+@@ -129,7 +129,7 @@
+ 
+ #define MY_EOF 1
+ 
+-#define MAX_REPLY_LEN (1 << 17)
++#define MAX_REPLY_LEN (1 << 19)
+ 
+ #define RENAME_TEMP_CHARS 8
+ 
